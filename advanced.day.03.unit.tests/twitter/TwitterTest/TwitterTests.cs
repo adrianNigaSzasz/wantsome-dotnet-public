@@ -12,11 +12,11 @@ namespace TwitterTests
 		{
 			var clientMock = new Mock<IClient>();
 
-			clientMock.Verify(c => c.SendTweetToServer(It.IsAny<string>()), Times.Once);
 
 			var testedClass = new _6.Twitter.Models.Tweet(clientMock.Object);
 			testedClass.ReceiveMessage("test");
 
+			clientMock.Verify(c => c.SendTweetToServer("test"), Times.Once);
 
 		}
 
@@ -25,10 +25,11 @@ namespace TwitterTests
 		{
 			var clientMock = new Mock<IClient>();
 
-			clientMock.Verify(c => c.SendTweetToServer(It.IsAny<string>()), Times.Once);
 
 			var testedClass = new _6.Twitter.Models.Tweet(clientMock.Object);
 			testedClass.ReceiveMessage("test");
+
+			clientMock.Verify(c => c.SendTweetToServer("test"), Times.Once);
 
 		}
 	}

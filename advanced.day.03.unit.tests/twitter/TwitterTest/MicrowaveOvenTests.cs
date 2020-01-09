@@ -14,13 +14,14 @@ namespace TwitterTest
 
 			var repomock = new Mock<ITweetRepository>();
 
-			repomock.Verify(r => r.SaveTweet(It.IsAny<string>()), Times.Once);
+
 
 			var testedClass = new _6.Twitter.Models.MicrowaveOven(writerMock.Object, repomock.Object);
 
 			testedClass.SendTweetToServer("test");
 
-			
+			repomock.Verify(r => r.SaveTweet("test2"), Times.Once);
+
 
 
 		}
@@ -32,11 +33,12 @@ namespace TwitterTest
 
 			var repomock = new Mock<ITweetRepository>();
 
-			writerMock.Verify(r => r.WriteLine(It.IsAny<string>()), Times.Once);
 
 			var testedClass = new _6.Twitter.Models.MicrowaveOven(writerMock.Object, repomock.Object);
 
 			testedClass.WriteTweet("test");
+
+			writerMock.Verify(r => r.WriteLine("test"), Times.Once);
 
 		}
 	}
