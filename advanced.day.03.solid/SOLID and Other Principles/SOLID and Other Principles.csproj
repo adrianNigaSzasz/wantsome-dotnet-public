@@ -96,8 +96,17 @@
     <Compile Include="4. Interface Segregation\2.2 Identity - After\PasswordManager.cs" />
     <Compile Include="5. Dependency Inversion\1.2. Hello World - After\HelloWorld.cs" />
     <Compile Include="5. Dependency Inversion\1.1. Hello World - Before\HelloWorld.cs" />
+    <Compile Include="5. Dependency Inversion\2.2. Worker - After\IWorker.cs" />
+    <Compile Include="5. Dependency Inversion\2.2. Worker - After\Manager.cs" />
+    <Compile Include="5. Dependency Inversion\2.2. Worker - After\Worker.cs" />
     <Compile Include="5. Dependency Inversion\2.1. Worker - Before\Manager.cs" />
     <Compile Include="5. Dependency Inversion\2.1. Worker - Before\Worker.cs" />
+    <Compile Include="5. Dependency Inversion\3.2. Database - After\Courses.cs" />
+    <Compile Include="5. Dependency Inversion\3.2. Database - After\Data.cs" />
+    <Compile Include="5. Dependency Inversion\3.2. Database - After\IData.cs" />
+    <Compile Include="5. Dependency Inversion\3.2. Database - After\Static\AbstractData.cs" />
+    <Compile Include="5. Dependency Inversion\3.2. Database - After\Static\Courses.cs" />
+    <Compile Include="5. Dependency Inversion\3.2. Database - After\Static\Data.cs" />
     <Compile Include="5. Dependency Inversion\3.1. Database - Before\Courses.cs" />
     <Compile Include="5. Dependency Inversion\3.1. Database - Before\Data.cs" />
     <Compile Include="5. Dependency Inversion\3.1. Database - Before\Static\Courses.cs" />
